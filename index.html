@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="controls">
+        <button id="shareScreen" onclick="onShareScreen()">開啟錄音功能</button>
+        <button id="testStart" onclick="onTestStart(false)">單次測試</button>
+        <button id="testRecordFunction" onclick="ontestRecordFunction()">測試錄音功能</button>
+    </div>
+    <div>測試狀態:</div>
+    <div id = "testStatus"></div>
+    <h3>最新定時自動測試結果:</h3>
+    <div id = "latestTestResult"></div>
+    <h3>歷次自動測試結果:</h3>
+    <div id = "testResult"></div>
+    <h3>最新自動測試錄音檔:</h3>
+    <a id="downloadLink" download="mediarecorder.webm" name="mediarecorder.webm" href></a>
+    <audio src="432_10.mp3" id = "432_10"></audio>
+    <audio src="432_20.mp3" id = "432_20"></audio>
+    <script src="index.js"></script>
+    <script src="fft.js"></script>
+</body>
+</html>
